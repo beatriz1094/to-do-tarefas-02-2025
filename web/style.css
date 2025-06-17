@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Cabeçalho com navegação */
+nav {
+  background-color: #007bff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav::before {
+  content: "Gerenciamento de Tarefas";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 30px 0 10px 30px;
+  font-size: 24px;
+  color: #000;
+}
+
+/* Formulário */
+form {
+  margin-left: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+label {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+input {
+  margin-top: 5px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botão */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Mensagem abaixo do formulário */
+#msg {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
